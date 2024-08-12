@@ -5984,9 +5984,9 @@ GET  /api/builder/v1/lexicon/detail
     "status": "success",
     "error_info": "",
     "word_info": [
-                {"word": "开心", "homoionym": "高兴"},
-                {"word": "不开心", "homoionym": "不高兴"},
-                {"word": "不开心", "homoionym": "伤心"}
+                {"id": "6820698575169822721","word": "开心", "homoionym": "高兴"},
+                {"id": "6820698575169822722","word": "不开心", "homoionym": "不高兴"},
+                {"id": "6820698575169822723","word": "不开心", "homoionym": "伤心"}
     ],
     "mode": "std",
     "extract_info": {
@@ -6112,9 +6112,9 @@ POST  /api/builder/v1/lexicon/words/search
     "res": {
         "count": 3,
         "df": [
-            {"word": "开心", "homoionym": "高兴"},
-            {"word": "开心", "homoionym": "兴奋"},
-            {"word": "开心", "homoionym": "激动"},
+            {"id": "6820698575169822721", "word": "开心", "homoionym": "高兴"},
+            {"id": "6820698575169822722", "word": "开心", "homoionym": "兴奋"},
+            {"id": "6820698575169822723", "word": "开心", "homoionym": "激动"},
     ]
 }
 ```
@@ -6165,20 +6165,17 @@ POST  /api/builder/v1/lexicon/words/delete
 
 请求参数：
 
-| 序号 | 字段名称       | 字段类型 | 参数位置 | 是否必须 | 长度 | 字段说明         |
-| :--- | :------------- | :------- | -------- | :------- | ---- | :--------------- |
-| 1    | id             | int      | body     | 是       |      | 词库id           |
-| 2    | word_info_list | list     | body     | 是       |      | 要删除的词汇信息 |
+| 序号 | 字段名称 | 字段类型 | 参数位置 | 是否必须 | 长度 | 字段说明           |
+| :--- | :------- | :------- | -------- | :------- | ---- | :----------------- |
+| 1    | id       | int      | body     | 是       |      | 词库id             |
+| 2    | word_ids | list     | body     | 是       |      | 要删除的词汇id列表 |
 
 请求示例：
 
 ```json
 {
     "id": 1,
-    "word_info_list": [
-        {"word": "伤心", "homoionym": "难过"},
-        {"word": "悲伤", "homoionym": "难过"}
-    ]
+    "word_ids": ["6820698575169822721","6820698575169822722"]
 }
 ```
 
