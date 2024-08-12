@@ -5984,9 +5984,15 @@ GET  /api/builder/v1/lexicon/detail
     "status": "success",
     "error_info": "",
     "word_info": [
-                {"id": "6820698575169822721","word": "开心", "homoionym": "高兴"},
-                {"id": "6820698575169822722","word": "不开心", "homoionym": "不高兴"},
-                {"id": "6820698575169822723","word": "不开心", "homoionym": "伤心"}
+            {
+                "id": "6820698575169822721",
+                "lexicon_id": 1,
+            	"words": "开心",
+             	"create_by": "xxx",
+             	"update_by": "xxx",
+             	"create_time": "xxx",
+             	"update_time": "xxx"
+            }
     ],
     "mode": "std",
     "extract_info": {
@@ -6110,12 +6116,18 @@ POST  /api/builder/v1/lexicon/words/search
 ```json
 {
     "res": {
-        "count": 3,
+        "count": 1,
         "df": [
-            {"id": "6820698575169822721", "word": "开心", "homoionym": "高兴"},
-            {"id": "6820698575169822722", "word": "开心", "homoionym": "兴奋"},
-            {"id": "6820698575169822723", "word": "开心", "homoionym": "激动"},
-    ]
+            {
+                "id": "6820698575169822721",
+                "lexicon_id": 1,
+            	"words": "开心",
+             	"create_by": "xxx",
+             	"update_by": "xxx",
+             	"create_time": "xxx",
+             	"update_time": "xxx"
+            }
+         ]
 }
 ```
 
