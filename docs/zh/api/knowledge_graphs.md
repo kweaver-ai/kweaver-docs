@@ -6142,7 +6142,7 @@ POST  /api/builder/v1/lexicon/words/edit
 | 序号 | 字段名称 | 字段类型 | 参数位置 | 是否必须 | 长度 | 字段说明         |
 | :--- | :------- | :------- | -------- | :------- | ---- | :--------------- |
 | 1    | id       | int      | body     | 是       |      | 词库id           |
-| 2    | old_info | object   | body     | 是       |      | 原始词汇内容     |
+| 2    | word_id  | string   | body     | 是       |      | 词汇id           |
 | 3    | new_info | object   | body     | 是       |      | 修改后的词汇内容 |
 
 请求示例：
@@ -6150,7 +6150,7 @@ POST  /api/builder/v1/lexicon/words/edit
 ```json
 {
     "id": 1,
-    "old_info": {"word": "伤心", "homoionym": "不伤心"},
+    "word_id": "6820698575169822721",
     "new_info": {"word": "伤心", "homoionym": "难过"},
 }
 ```
