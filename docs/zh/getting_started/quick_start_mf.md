@@ -197,7 +197,7 @@
 
     注意：在变量表单中可以直接更改变量名称和字段名称，选择该变量是否为调试与预览的必填项。
 
-    ![avatar](./assets/promptVMust.png)
+    ![avatar](../../images/getting_started/promptVMust.png)
 
 2. 变量配置
 

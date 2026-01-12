@@ -134,13 +134,14 @@ extra:
       link: /en/
       lang: en
     - name: 中文
+      link: /
       lang: zh
 
 # 底部日期
 copyright: Copyright &copy; 2023 - 2024 Martin Donath
 
 nav:
-#  - index.md
+  - 首页: index.md
   - 简介:
     - KWeaver介绍: introduction/about.md
     - 架构介绍: introduction/framework.md
