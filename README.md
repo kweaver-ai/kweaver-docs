@@ -13,7 +13,7 @@ KWeaver技术文档访问网址：https://docs.kweaver.ai
 本项目采用基于 mkdocs 的 mkdocs-material 作为文档构建工具，需要安装 [python](http://python.org) 依赖：
 
 ```bash
-pip install requirements.txt
+pip install -r ./requirements.txt
 ```
 
 ### 生成文档
